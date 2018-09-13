@@ -1,0 +1,54 @@
+// imports
+@import './variables/variables';
+@import './mixins/mixins';
+@import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900");
+
+// reset 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: calc(100% - 15vw);
+}
+
+.flex-wrapper {
+    // max-width: calc(100% - 10vw);
+    margin: 0 auto;
+    padding: 10vh 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center; 
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 1;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+// menu
+@import './sections/menu';
+@import './sections/header';
+@import './sections/troopers';
+@import './sections/planets';
+@import './sections/contact';
+
+// media-query
+@import './media-query/media-query';

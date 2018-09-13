@@ -1,0 +1,69 @@
+header {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/header-bg.jpg) fixed no-repeat;
+    background-size: cover;
+    // clip-path: polygon(0 0, 0 100%, 100% calc(100%  - 10vw), 100% 0);
+    margin-bottom: -10vw;
+    overflow: hidden;
+
+    .watchword {
+        position: relative;
+        text-align: center;
+    }
+    i.fa-crown {
+        color: $third;
+        font-size: 4rem;
+        text-shadow: 3px 1px 10px #111;
+
+        position: absolute;
+        top: -12%;
+        left: -6%;
+        transform: rotate(-18deg);
+        animation: .9s glow ease-in-out 1.5s forwards;
+    }
+    i.fa-angle-down {
+        cursor: pointer;
+        margin-top: 1.5rem;
+        //height: 45px;
+        //width: 45px;
+        color: rgba($third, .8);
+        font-size: 3rem;
+
+    }
+    p {
+        font-size: 1.7em;
+        padding: .25em 0;
+        color: $secondary;
+        letter-spacing: .5em;
+        background-color: rgba($primary, .9);
+        border-radius: .5em;
+    }
+    h1 {
+        line-height: .8;
+        font-size: 10rem;
+        text-transform: uppercase;
+        color: rgba($secondary, .9);
+    }
+}
+
+@keyframes glow {
+    0% {
+        transform:  rotate(-18deg);
+    }
+    25% {
+        transform:  rotate(-2.5deg);
+        color: $third * 1.2;
+    }
+    50% {
+        transform:  rotate(-7.5deg) scale(1.1);
+        color: $primary;
+    }
+    75% {
+        transform:  rotate(-3.5deg);
+        color: $third * 1.2;
+    }
+    100% {
+        transform:  rotate(-18deg);
+    }
+}

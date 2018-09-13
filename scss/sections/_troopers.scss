@@ -1,0 +1,116 @@
+// testowy skwed -section (do wyjebania)
+.troopers {
+    // position: relative;
+    // z-index: 1;
+    // clip-path: polygon(0 0, 0 100%, 100% calc(100%  - 10vw), 100% 0);
+    background: $secondary;
+
+    .watchword-join {
+        // display: flex;
+        // flex-flow: row wrap;
+        // justify-content: space-between;
+        flex: 0 0 100%;
+
+        align-items: center;
+        h2 {
+            //background: $third;
+            color: $primary;
+            font-size: 6rem;
+            text-align: center;
+            //line-height: .6;
+        }
+        p {
+            color: $third;
+            text-align: justify;
+        }
+    }
+
+}
+
+.card {
+    background: $secondary * 1.4;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    flex: 1 0 32%;
+    margin: 5px;
+    transition: all .3s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+        //transform: scale(1.025);
+        box-shadow: 0 5px 10px rgba(17, 17, 17, 0.212);
+    }
+
+    &.planet-card {
+        flex: 1 0 30%;  
+    }
+
+    h2 {
+        color: $secondary;
+        font-size: 3rem;
+        background: $primary;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+        &.trooper-img {
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        
+    }
+
+    p {
+        font-size: 1.3rem;
+        color: $third;
+        margin: 2rem 0;
+        text-align: justify;
+    }
+
+    ul.pros {
+        list-style: none;
+        text-align: left;
+        
+        margin: 2rem 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+
+        padding: 1rem 0;
+        border-bottom: 1px solid $secondary;
+
+        font-size: 1.3rem;
+        color: $third;
+        line-height: 1.5;
+
+        i {
+            min-width: 30px;
+            color: $primary;
+            font-size: 2rem;
+        }
+    }
+
+    .btn {
+        cursor: pointer;
+        color: $third;
+        background: $secondary;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: .5rem 5rem;
+        text-decoration: none;
+        border: .2em solid $third;
+        border-radius: 1em;
+
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            background: $primary;
+        }
+    }
+}

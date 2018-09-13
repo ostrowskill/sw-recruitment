@@ -1,0 +1,21 @@
+.planets {
+    background: $third;
+    color: $secondary;
+
+    .card {
+        background: $third*1.1;
+    }
+    h2 {
+        background: none;
+        //border: 1px solid #eee;
+    }
+    p {
+        color: $third * 0.5;
+    }
+
+    .btn {
+        color: $third *.9;
+        background: none;
+        border: .2em solid $third * .9;
+    }
+}

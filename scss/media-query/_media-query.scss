@@ -1,0 +1,21 @@
+@media screen and (min-width: 40em) {
+    .top-nav {
+        .hamburger-menu {
+            display: none;
+        }
+
+        ul {
+            position: unset;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 80vw;
+            background: none;
+            box-shadow: none;
+        }
+
+        li {
+            border-bottom: none;
+        }
+    }
+}
