@@ -11,7 +11,6 @@
 
 <body>
     <nav class="top-nav">
-        <!-- remote ? -->
         <div class="wrapper nav-flex">
             <div class="logo"><i class="fab fa-first-order"></i></div>
             <div class="hamburger-menu">
@@ -153,7 +152,7 @@
     <!-- section with forms -->
     <section class="contact">
         <div class="wrapper flex-wrapper">
-            <form>
+            <form name="contactform">
                 <!-- header -->
                 <h2 class="header--first-part">Contact</h2>
                 <h2 class="header--second-part">us</h2>
@@ -163,9 +162,9 @@
                 <label for="email"><i class="fas fa-angle-right"></i>enter your e-mail</label>
                 <input id="email" type="text" placeholder="@email">
 
-                <label for="male" name="gender"><i class="fas fa-angle-right"></i>male<input id="male"type="checkbox" name="gender" value="male"></label>
+                <label for="male" name="gender"><i class="fas fa-angle-right"></i>male<input id="male"type="radio" name="gender" value="male" checked></label>
                 
-                <label for="female" name="gender"><i class="fas fa-angle-right"></i>female<input id="female" type="checkbox" name="gender" value="female"></label>
+                <label for="female" name="gender"><i class="fas fa-angle-right"></i>female<input id="female" type="radio" name="gender" value="female"></label>
                  
 
                 <button class="sbm-btn"><i class="fas fa-paper-plane"></i>brief</button>
