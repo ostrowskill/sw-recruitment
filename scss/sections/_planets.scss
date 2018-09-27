@@ -4,6 +4,10 @@
 
     .card {
         background: $third*1.1;
+
+        &.picked-card {
+            background: $third * 1.2;
+        }
     }
     h2 {
         background: none;

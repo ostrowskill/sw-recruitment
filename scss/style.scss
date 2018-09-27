@@ -1,6 +1,5 @@
 // imports
 @import './variables/variables';
-@import './mixins/mixins';
 @import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900");
 
@@ -11,6 +10,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
+    user-select: none;
 }
 
 .wrapper {
@@ -49,6 +49,7 @@ p {
 @import './sections/troopers';
 @import './sections/planets';
 @import './sections/contact';
+@import './sections/modal';
 
 // media-query
 @import './media-query/media-query';

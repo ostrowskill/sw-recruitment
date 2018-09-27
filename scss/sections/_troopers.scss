@@ -38,6 +38,14 @@
 
     cursor: pointer;
 
+    &.picked-card {
+        background: $secondary * 2.5;
+
+        h2 {
+            color: $secondary * 2.5;;
+        }
+    }
+
     &:hover {
         //transform: scale(1.025);
         box-shadow: 0 5px 10px rgba(17, 17, 17, 0.212);
@@ -113,4 +121,8 @@
             background: $primary;
         }
     }
+
+
 }
+
+

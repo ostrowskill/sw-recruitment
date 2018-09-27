@@ -153,25 +153,64 @@
     <!-- section with forms -->
     <section class="contact">
         <div class="wrapper flex-wrapper">
-            <form>
-                <!-- header -->
-                <h2 class="header--first-part">Contact</h2>
-                <h2 class="header--second-part">us</h2>
-                <!-- right form -->
-                <label for="username"><i class="fas fa-angle-right"></i>enter your name</label>
-                <input id="username" type="text" placeholder="username">
-                <label for="email"><i class="fas fa-angle-right"></i>enter your e-mail</label>
-                <input id="email" type="text" placeholder="@email">
+            <form action="#" name="userData">
 
-                <label for="male" name="gender"><i class="fas fa-angle-right"></i>male<input id="male"type="checkbox" name="gender" value="male"></label>
-                
-                <label for="female" name="gender"><i class="fas fa-angle-right"></i>female<input id="female" type="checkbox" name="gender" value="female"></label>
-                 
+                <label for="username">
+                    <span class="label-desc"><i class="fas fa-user"></i>username</span>
+                    <!-- username input -->
+                    <input type="text" name="username" id="username" placeholder="please, enter you name">
+                    <!--  error handler -->
+                    <span class="validation-msg">123</span>
+                </label>
 
-                <button class="sbm-btn"><i class="fas fa-paper-plane"></i>brief</button>
+                <label for="email">
+                    <span class="label-desc"><i class="fas fa-envelope"></i>email</span>
+                    <!-- emai input -->
+                    <input type="text" name="email" id="email" placeholder="please, enter you email">
+                    <!-- error handler -->
+                    <span class="validation-msg">123</span>
+                </label>
+                <button type="submit" class="form-btn">submit</button>
             </form>
         </div>
     </section>
+
+    <div class="modal">
+        <!-- closing btn -->
+        <i class="far fa-times-circle closing"></i>
+        <!-- welcome section -->
+        <div class="welcome-user">
+            <div class="welcome-msg">
+                <h2>Welcome {username}</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aspernatur!</p>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="#cac1b0" points="0,100 100,0 100,100" />
+            </svg>
+        </div>
+        <ul class="user-profile">
+            <li class="user-name">
+                <span class="label">your name <i class="fas fa-angle-double-right"></i></span>
+                <span class="user-data">someName</span>
+            </li>
+            <li class="user-email">
+                    <span class="label">your email <i class="fas fa-angle-double-right"></i></span>
+                    <span class="user-data">some@email.com</span>
+            </li>
+            <!-- picked cards -->
+            <li class="user-picks">
+                <img class="trooper" src="img/troop_four.jpg" alt="">
+
+                <i class="fas fa-exchange-alt"></i>
+
+                <img class="planet" src="img/bespin.jpg" alt="">
+            </li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt maiores dicta sequi alias sit ullam nesciunt labore saepe deleniti itaque omnis incidunt, fuga ut, dolor, accusantium tempore exercitationem minus.</p>
+            <button class="submit-btn">good to go</button>
+            <span class="rebel">No, i want to be a rebel!</span>
+        </ul>
+    </div>
 
 </body>
 <script src="js/main.js"></script>
