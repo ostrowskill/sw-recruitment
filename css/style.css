@@ -272,7 +272,7 @@ header {
       transition: .3s all;
       border: none; }
       .contact form input[type="text"]::placeholder {
-        color: #b6ae9e; }
+        color: #a29a8d; }
       .contact form input[type="text"]:focus {
         outline: none;
         padding-left: 1.2rem; }
@@ -375,7 +375,7 @@ header {
       align-items: center; }
       .modal .user-profile .user-picks i {
         font-size: 4rem;
-        color: #b6ae9e; }
+        color: #a29a8d; }
     .modal .user-profile img {
       width: 100px;
       height: 100px;
