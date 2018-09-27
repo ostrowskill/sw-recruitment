@@ -55,32 +55,8 @@
 
         
 
-<<<<<<< HEAD
         button.form-btn {
             border: none;
-=======
-    }
-    // gender section (some other styles etc)
-    label[name="gender"] {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    input[type="radio"] {
-        margin-left: 1em;
-        vertical-align: middle;
-        cursor: pointer;
-        position: relative;
-        width: 35px;
-        height: 20px;
-        -webkit-appearance: none;
-        background: $third;
-        border: 1px solid $secondary*.7;
-        border-radius: 1rem;
-        box-shadow: inset 0 0 5px #000000;
-        transition: .3s all ease-in-out;
-
-        &:focus {
->>>>>>> a31afb1f18f208972f7829e43eb5e32aa536f04e
             outline: none;
             padding: 1em;
             background: $primary;
