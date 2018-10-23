@@ -20,46 +20,46 @@
                 <span></span>
             </div>
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">class</a></li>
-                <li><a href="#">planet</a></li>
-                <li><a href="#">apply</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#class">class</a></li>
+                <li><a href="#planet">planet</a></li>
+                <li><a href="#apply">apply</a></li>
             </ul>
         </div>
     </nav>
-    <header class="flex-container">
+    <header id="home" class="flex-container">
         <div class="wrapper">
             <div class="watchword">
                 <i class="fas fa-crown"></i>
                 <p>Let's make</p>
                 <h1>Dark side</h1>
                 <p>great again</p>
-                <i class="fas fa-angle-down"></i>
+                <a href="#class"><i class="fas fa-angle-down"></i></a>
             </div>
         </div>
     </header>
     <!-- section with troopers -->
-    <section class="troopers flex-container">
+    <section id="class" class="troopers">
+
+        <div class="description">
+            <h2>Select class</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, accusamus totam? Consequatur fuga autem ea
+                dicta iure maiores amet error corporis magnam expedita nam mollitia, inventore quo corrupti quam
+                dignissimos pariatur beatae. Commodi, saepe fugit quidem repellendus, voluptatibus voluptas deleniti
+                dolorum rem corporis placeat, libero illum inventore ullam ducimus mollitia? Fugit reprehenderit
+                voluptatum expedita distinctio at quam suscipit, iste beatae ullam sunt vel rem praesentium dolorum
+                corrupti in esse nisi molestiae consequuntur nemo, facilis soluta, dolor saepe! Sint voluptate beatae
+                distinctio repellendus molestias deleniti provident mollitia unde voluptates rem, totam consequatur non
+                odio aliquam dignissimos, quae facilis ducimus. Ad esse dolorum libero aliquam quas in numquam quasi
+                exercitationem modi impedit quo aperiam nemo eveniet facere repudiandae rem nostrum illo, ipsam sit
+                dicta veniam, ullam quia id hic! Cumque tempore enim sed. Fuga laborum amet possimus at id magni fugit
+                vitae, nostrum iure sint natus, dolores ipsa corporis aspernatur, esse cum.</p>
+        </div>
+
         <div class="wrapper flex-wrapper">
-            <div class="watchword-join">
-                <h2>Join us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, blanditiis! Quae, ad. In non,
-                    rem tempora inventore veritatis voluptates, fugit cupiditate quia atque, ab voluptatem nisi
-                    voluptatibus. Veritatis, culpa et?</p>
-            </div>
+
             <!-- 1st card -->
-            <!-- <div class="card">
-                <img class="trooper-img" src="img/troop_one.jpg" alt="">
-                <h2>trooper</h2>
-                <ul class="pros">
-                    <li><i class="fas fa-check"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                    <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
-                    <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-                        nihil!</li>
-                </ul>
-                <a href="#!" class="btn">pick</a>
-            </div> -->
-            <!-- 2nd card -->
             <div class="card">
                 <img class="trooper-img" src="img/troop_two.jpg" alt="">
                 <h2>trooper</h2>
@@ -69,9 +69,9 @@
                     <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
                         nihil!</li>
                 </ul>
-                <a href="#!" class="btn">pick</a>
+                <a class="btn">pick</a>
             </div>
-            <!-- 3rd card -->
+            <!-- 2nd card -->
             <div class="card">
                 <img class="trooper-img" src="img/troop_three.jpg" alt="">
                 <h2>trooper</h2>
@@ -81,9 +81,9 @@
                     <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
                         nihil!</li>
                 </ul>
-                <a href="#!" class="btn">pick</a>
+                <a class="btn">pick</a>
             </div>
-            <!-- 4th card -->
+            <!-- 3rd card -->
             <div class="card">
                 <img class="trooper-img" src="img/troop_four.jpg" alt="">
                 <h2>trooper</h2>
@@ -93,12 +93,27 @@
                     <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
                         nihil!</li>
                 </ul>
-                <a href="#!" class="btn">pick</a>
+                <a class="btn">pick</a>
             </div>
         </div>
     </section>
     <!-- section with planets -->
-    <section class="planets">
+    <section id="planet" class="planets">
+        <div class="description">
+            <h2>Select desination</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, accusamus totam? Consequatur fuga autem ea
+                dicta iure maiores amet error corporis magnam expedita nam mollitia, inventore quo corrupti quam
+                dignissimos pariatur beatae. Commodi, saepe fugit quidem repellendus, voluptatibus voluptas deleniti
+                dolorum rem corporis placeat, libero illum inventore ullam ducimus mollitia? Fugit reprehenderit
+                voluptatum expedita distinctio at quam suscipit, iste beatae ullam sunt vel rem praesentium dolorum
+                corrupti in esse nisi molestiae consequuntur nemo, facilis soluta, dolor saepe! Sint voluptate beatae
+                distinctio repellendus molestias deleniti provident mollitia unde voluptates rem, totam consequatur non
+                odio aliquam dignissimos, quae facilis ducimus. Ad esse dolorum libero aliquam quas in numquam quasi
+                exercitationem modi impedit quo aperiam nemo eveniet facere repudiandae rem nostrum illo, ipsam sit
+                dicta veniam, ullam quia id hic! Cumque tempore enim sed. Fuga laborum amet possimus at id magni fugit
+                vitae, nostrum iure sint natus, dolores ipsa corporis aspernatur, esse cum.</p>
+        </div>
         <div class="wrapper flex-wrapper">
             <!-- 1st planet -->
             <div class="card planet-card">
@@ -106,7 +121,7 @@
                 <h2>bespin</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam ipsam amet ut nobis harum
                     delectus sapiente saepe nihil omnis.</p>
-                <a href="#!" class="btn">pick</a>
+                <a class="btn">pick</a>
             </div>
             <!-- 2nd planet -->
             <div class="card planet-card">
@@ -114,7 +129,7 @@
                 <h2>endor</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam ipsam amet ut nobis harum
                     delectus sapiente saepe nihil omnis.</p>
-                <a href="#!" class="btn">pick</a>
+                <a class="btn">pick</a>
             </div>
             <!-- 3rd planet -->
             <div class="card planet-card">
@@ -122,7 +137,7 @@
                 <h2>hooth</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam ipsam amet ut nobis harum
                     delectus sapiente saepe nihil omnis.</p>
-                <a href="#!" class="btn">pick</a>
+                <a class="btn">pick</a>
             </div>
             <!-- 4th planet -->
             <div class="card planet-card">
@@ -130,7 +145,7 @@
                 <h2>jakku</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam ipsam amet ut nobis harum
                     delectus sapiente saepe nihil omnis.</p>
-                <a href="#!" class="btn">pick</a>
+                <a class="btn">pick</a>
             </div>
             <!-- 5th planet -->
             <div class="card planet-card">
@@ -138,7 +153,7 @@
                 <h2>naboo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam ipsam amet ut nobis harum
                     delectus sapiente saepe nihil omnis.</p>
-                <a href="#!" class="btn">pick</a>
+                <a class="btn">pick</a>
             </div>
             <!-- 6th planet -->
             <div class="card planet-card">
@@ -146,19 +161,27 @@
                 <h2>tatooine</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam ipsam amet ut nobis harum
                     delectus sapiente saepe nihil omnis.</p>
-                <a href="#!" class="btn">pick</a>
+                <a class="btn">pick</a>
             </div>
         </div>
     </section>
     <!-- section with forms -->
-    <section class="contact">
+    <section id="apply" class="contact">
         <div class="wrapper flex-wrapper">
+            <!-- description-->
+            <div class="info">
+                <h2>Enter userdata</h2>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quasi alias omnis</p>
+            </div>
+
+            <!-- form itself-->
             <form action="#" name="userData">
 
                 <label for="username">
                     <span class="label-desc"><i class="fas fa-user"></i>username</span>
                     <!-- username input -->
-                    <input type="text" name="username" id="username" placeholder="please, enter you name">
+                    <input type="text" name="username" id="username" placeholder="please, enter your name">
                     <!--  error handler -->
                     <span class="validation-msg">123</span>
                 </label>
@@ -166,7 +189,7 @@
                 <label for="email">
                     <span class="label-desc"><i class="fas fa-envelope"></i>email</span>
                     <!-- emai input -->
-                    <input type="text" name="email" id="email" placeholder="please, enter you email">
+                    <input type="text" name="email" id="email" placeholder="please, enter your email">
                     <!-- error handler -->
                     <span class="validation-msg">123</span>
                 </label>
@@ -186,7 +209,7 @@
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon fill="#cac1b0" points="0,100 100,0 100,100" />
+                <polygon fill="#eeece1" points="0,100 100,0 100,100" />
             </svg>
         </div>
         <ul class="user-profile">
@@ -195,18 +218,25 @@
                 <span class="user-data">someName</span>
             </li>
             <li class="user-email">
-                    <span class="label">your email <i class="fas fa-angle-double-right"></i></span>
-                    <span class="user-data">some@email.com</span>
+                <span class="label">your email <i class="fas fa-angle-double-right"></i></span>
+                <span class="user-data">some@email.com</span>
             </li>
             <!-- picked cards -->
+
             <li class="user-picks">
+                <hr>
                 <img class="trooper" src="img/troop_four.jpg" alt="">
 
                 <i class="fas fa-exchange-alt"></i>
 
                 <img class="planet" src="img/bespin.jpg" alt="">
+                <hr>
             </li>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt maiores dicta sequi alias sit ullam nesciunt labore saepe deleniti itaque omnis incidunt, fuga ut, dolor, accusantium tempore exercitationem minus.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt maiores dicta sequi alias sit
+                ullam nesciunt labore saepe deleniti itaque omnis incidunt, fuga ut, dolor, accusantium tempore
+                exercitationem minus.</p>
+            <hr>
             <button class="submit-btn">good to go</button>
             <span class="rebel">No, i want to be a rebel!</span>
         </ul>

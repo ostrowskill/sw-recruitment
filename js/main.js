@@ -48,16 +48,14 @@
     // pick trooper
     const troopers = document.querySelector('.troopers');
     troopers.addEventListener('click', e => {
-        let pickTro = onCardSelection(e);
-        selectedTrooper = pickTro;
+        selectedTrooper = onCardSelection(e);
     });
 
 
     // pick planet
     const planets = document.querySelector('.planets');
     planets.addEventListener('click', e => {
-        let pickCrd = onCardSelection(e);
-        selectedPlanet = pickCrd;
+        selectedPlanet = onCardSelection(e);
     });
 
     // validation
@@ -120,11 +118,9 @@
     const trooperPlanet = modal.querySelector('.user-picks .planet');
 
     myform.addEventListener('submit', function (e) {
-        // if (!emailValid || !usernameValid || !selectedTrooper || !selectedPlanet) {
-        //     e.preventDefault();
-        //     console.log('invalida');
-        if (false) {
+        if (!emailValid || !usernameValid || !selectedTrooper || !selectedPlanet) {
             e.preventDefault();
+            console.log('invalida');
         } else {
             e.preventDefault();
             console.log(selectedTrooper);
@@ -174,6 +170,17 @@
         modal.appendChild(paragraph);
 
 
+    });
+
+    //smooth scrool
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 
 })();

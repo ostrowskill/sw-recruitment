@@ -6,11 +6,19 @@
         background: $third*1.1;
 
         &.picked-card {
-            background: $third * 1.2;
+            background: $primary;
+            h2 {
+                color: $third;
+            }
+            p {
+                color: $third * .9;
+            }
         }
     }
+    
     h2 {
         background: none;
+        color: $third *.95;
         //border: 1px solid #eee;
     }
     p {
@@ -18,8 +26,22 @@
     }
 
     .btn {
-        color: $third *.9;
+        color: $third *.8;
         background: none;
-        border: .2em solid $third * .9;
+        border: .1em solid $third * .9;
+    }
+
+
+    .description {
+        h2, p {
+            text-align: left;
+            color: $third * .8;
+        }
+        p {
+            text-align: justify;
+        }
+        hr {
+            background: $third * .8;
+        }
     }
 }

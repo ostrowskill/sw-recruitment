@@ -19,12 +19,30 @@
 }
 
 .flex-wrapper {
-    // max-width: calc(100% - 10vw);
-    margin: 0 auto;
-    padding: 10vh 0;
     display: flex;
     flex-flow: row wrap;
-    justify-items: center; 
+    align-items: center;
+}
+
+section {
+   padding: 10vh 0;
+
+    .description {
+        margin: 4em auto;
+        max-width: calc(100% - 15vw);
+        
+        h2 {
+            font-size: 4rem;
+        }
+
+        hr {
+            border:0;
+            margin: 2em 0;
+            width:100%;
+            height:1px;
+        }
+
+    }
 }
 
 .flex-container {
@@ -42,6 +60,7 @@ h1 {
 p {
     font-size: 1.5rem;
 }
+
 
 // menu
 @import './sections/menu';

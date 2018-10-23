@@ -1,12 +1,9 @@
 header {
     height: 100vh;
-    width: 100%;
-    background: url(../img/header-bg.jpg) fixed no-repeat;
+    background: url(../img/header-bg.jpg) fixed no-repeat, linear-gradient(rgb(78, 20, 236) * .8, $secondary);
     background-size: cover;
-    // clip-path: polygon(0 0, 0 100%, 100% calc(100%  - 10vw), 100% 0);
-    margin-bottom: -10vw;
-    overflow: hidden;
-
+    background-blend-mode: overlay;
+    
     .watchword {
         position: relative;
         text-align: center;
@@ -17,16 +14,14 @@ header {
         text-shadow: 3px 1px 10px #111;
 
         position: absolute;
-        top: -12%;
-        left: -6%;
+        top: -30px;
+        left: -15px;
         transform: rotate(-18deg);
         animation: .9s glow ease-in-out 1.5s forwards;
     }
     i.fa-angle-down {
         cursor: pointer;
         margin-top: 1.5rem;
-        //height: 45px;
-        //width: 45px;
         color: rgba($third, .8);
         font-size: 3rem;
 
@@ -34,16 +29,16 @@ header {
     p {
         font-size: 1.7em;
         padding: .25em 0;
-        color: $secondary;
+        color: $third;
         letter-spacing: .5em;
-        background-color: rgba($primary, .9);
+        background-color: rgba($secondary, .9);
         border-radius: .5em;
     }
     h1 {
-        line-height: .8;
+        line-height: .9;
         font-size: 10rem;
         text-transform: uppercase;
-        color: rgba($secondary, .9);
+        color: rgba($third, .9);
     }
 }
 

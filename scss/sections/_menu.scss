@@ -6,7 +6,7 @@
     padding: 1.5rem 0;
 
     i {
-        color: $secondary*1.7;
+        color: $primary * .8;
         font-size: 5rem;
     }
     ul {
@@ -17,7 +17,7 @@
         width: 100%;
         display: none;
         padding: 1rem .5rem;
-        background: $secondary * 1.2;
+        background: $secondary * 1.4;
         transition: all .5s ease-in-out;
 
         box-shadow: 0 0 10rem 1px black;
@@ -28,7 +28,7 @@
     }
     li {
         padding: 1rem 0;
-        border-bottom: 1px solid $secondary*1.9;
+        border-bottom: 1px solid $secondary*2;
         
     }
     a {
@@ -36,7 +36,13 @@
         color: $third;
         text-decoration: none;
         padding: 0 .5em;
-        border-left: .25em solid $secondary*1.9;
+        transition: .3s all ease-in-out;
+        border-left: .25em solid $secondary*4;
+
+        &:hover {
+            color: $third * 1.2;
+            border-left: .25em solid $primary;
+        }
         
     }
 
@@ -47,7 +53,7 @@
             height: .4rem;
             width: 4.3rem;
             margin: .5rem 0;
-            background: $third*.7;
+            background: $third*.9;
             border-radius: 2em;
             transition: all .5s ease-in-out;
             
@@ -55,7 +61,7 @@
 
         &.open-nav {
             span:nth-child(1) {
-                transform: rotate(45deg) translate(9px,10px);
+                transform: rotate(45deg) translate(8px,5px);
                 animation: saber .2s ease-in-out forwards;
                 animation-iteration-count: 5;
 
@@ -64,7 +70,7 @@
                 width: 0;
             }
             span:nth-child(3) {
-                transform: rotate(-45deg) translate(9px,-10px);
+                transform: rotate(-45deg) translate(8px,-5px);
                 animation: saber .2s ease-in-out forwards;
                 animation-iteration-count: 5;
 
@@ -82,12 +88,12 @@
 
 @keyframes saber {
     0% {
-        box-shadow: 0 0 15px  2px crimson;
+        box-shadow: 0 0 15px  2px rgb(33, 20, 220);
         background: linear-gradient(to right, $secondary 0%,$secondary 79%,$primary 79%,$primary 100%);   
     }
 
     100% {
-        box-shadow: 0 0 5px rgb(148, 8, 36); 
+        box-shadow: 0 0 5px rgb(45, 8, 148); 
         background: linear-gradient(to right, $secondary 0%,$secondary 79%,$primary 79%,$primary 100%);
     }
 }

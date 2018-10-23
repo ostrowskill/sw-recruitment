@@ -1,4 +1,5 @@
 @media screen and (min-width: 40em) {
+    // navigation
     .top-nav {
         .hamburger-menu {
             display: none;
@@ -9,7 +10,7 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            width: 80vw;
+            width: 70vw;
             background: none;
             box-shadow: none;
         }
@@ -18,4 +19,78 @@
             border-bottom: none;
         }
     }
+    // header - first section
+    header {
+        h1 {
+            font-size: 14em;
+        }
+
+        p {
+            font-size: 2.5em;
+        }
+
+        i.fa-crown {
+            font-size: 5em;
+        }
+
+        i.fa-angle-down {
+            font-size: 4em;
+        }
+    }
+
+    // contact 
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        .info {
+            text-align: right;
+            flex: 0 0 30%;
+        }
+    }
+
+    //modal
+    .modal {
+        top: 10em;
+        left: 30%;
+        right: 30%;
+        bottom: 10em;
+        overflow-y: unset;
+
+        .welcome-user {
+            svg {
+                height: 5vw;
+            }
+        }
+        .welcome-msg {
+            h2 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        .user-profile {
+            .user-picks {
+                justify-content: space-around;
+                i {
+                    font-size: 7em;
+                }
+            }
+
+            img {
+                width: 130px;
+                height: 130px;
+            }
+        }
+    }
+
+}
+
+@media screen and ( min-width: 1600px) {
+
+    section {
+        height: 100vh;
+    }
+
 }
