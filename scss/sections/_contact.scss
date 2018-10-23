@@ -33,7 +33,9 @@
 
     form {
         background: rgba($secondary, 0.75);
-        flex-grow: 1;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
         border-radius: .7rem;
         padding: 1rem;
         
@@ -48,8 +50,12 @@
             margin-bottom: 1em;
         }
         .label-desc {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             margin: .5em 0;
         }
 
@@ -63,8 +69,17 @@
         input[type="text"]{
             width: 100%;
             padding: 1em .5em;
+            -webkit-transition: .3s all;
             transition: .3s all;
             border: none;
+
+            &::-webkit-input-placeholder {
+                color: $third *.8;
+            }
+
+            &:-ms-input-placeholder {
+                color: $third *.8;
+            }
 
             &::placeholder {
                 color: $third *.8;
@@ -93,6 +108,7 @@
             border: .15em solid $third;
             color: $third;
             border-radius: 1em;
+            -webkit-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
 
             &:hover {

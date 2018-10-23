@@ -18,9 +18,12 @@
         display: none;
         padding: 1rem .5rem;
         background: $secondary * 1.4;
+        -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
 
-        box-shadow: 0 0 10rem 1px black;
+        -webkit-box-shadow: 0 0 10rem 1px black;
+
+                box-shadow: 0 0 10rem 1px black;
 
         &.open {
             display: block;
@@ -36,6 +39,7 @@
         color: $third;
         text-decoration: none;
         padding: 0 .5em;
+        -webkit-transition: .3s all ease-in-out;
         transition: .3s all ease-in-out;
         border-left: .25em solid $secondary*4;
 
@@ -55,24 +59,31 @@
             margin: .5rem 0;
             background: $third*.9;
             border-radius: 2em;
+            -webkit-transition: all .5s ease-in-out;
             transition: all .5s ease-in-out;
             
         }
 
         &.open-nav {
             span:nth-child(1) {
-                transform: rotate(45deg) translate(8px,5px);
-                animation: saber .2s ease-in-out forwards;
-                animation-iteration-count: 5;
+                -webkit-transform: rotate(45deg) translate(8px,5px);
+                        transform: rotate(45deg) translate(8px,5px);
+                -webkit-animation: saber .2s ease-in-out forwards;
+                        animation: saber .2s ease-in-out forwards;
+                -webkit-animation-iteration-count: 5;
+                        animation-iteration-count: 5;
 
             }
             span:nth-child(2) {
                 width: 0;
             }
             span:nth-child(3) {
-                transform: rotate(-45deg) translate(8px,-5px);
-                animation: saber .2s ease-in-out forwards;
-                animation-iteration-count: 5;
+                -webkit-transform: rotate(-45deg) translate(8px,-5px);
+                        transform: rotate(-45deg) translate(8px,-5px);
+                -webkit-animation: saber .2s ease-in-out forwards;
+                        animation: saber .2s ease-in-out forwards;
+                -webkit-animation-iteration-count: 5;
+                        animation-iteration-count: 5;
 
             }
         }
@@ -80,20 +91,47 @@
 }
 
 .nav-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
-@keyframes saber {
+@-webkit-keyframes saber {
     0% {
-        box-shadow: 0 0 15px  2px rgb(33, 20, 220);
+        -webkit-box-shadow: 0 0 15px  2px rgb(33, 20, 220);
+                box-shadow: 0 0 15px  2px rgb(33, 20, 220);
+        background: -webkit-gradient(linear, left top, right top, from($secondary),color-stop(79%, $secondary),color-stop(79%, $primary),to($primary));
         background: linear-gradient(to right, $secondary 0%,$secondary 79%,$primary 79%,$primary 100%);   
     }
 
     100% {
-        box-shadow: 0 0 5px rgb(45, 8, 148); 
+        -webkit-box-shadow: 0 0 5px rgb(45, 8, 148);
+                box-shadow: 0 0 5px rgb(45, 8, 148); 
+        background: -webkit-gradient(linear, left top, right top, from($secondary),color-stop(79%, $secondary),color-stop(79%, $primary),to($primary)); 
+        background: linear-gradient(to right, $secondary 0%,$secondary 79%,$primary 79%,$primary 100%);
+    }
+}
+
+@keyframes saber {
+    0% {
+        -webkit-box-shadow: 0 0 15px  2px rgb(33, 20, 220);
+                box-shadow: 0 0 15px  2px rgb(33, 20, 220);
+        background: -webkit-gradient(linear, left top, right top, from($secondary),color-stop(79%, $secondary),color-stop(79%, $primary),to($primary));
+        background: linear-gradient(to right, $secondary 0%,$secondary 79%,$primary 79%,$primary 100%);   
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 5px rgb(45, 8, 148);
+                box-shadow: 0 0 5px rgb(45, 8, 148); 
+        background: -webkit-gradient(linear, left top, right top, from($secondary),color-stop(79%, $secondary),color-stop(79%, $primary),to($primary)); 
         background: linear-gradient(to right, $secondary 0%,$secondary 79%,$primary 79%,$primary 100%);
     }
 }

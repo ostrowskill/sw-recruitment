@@ -7,12 +7,20 @@
 
         ul {
             position: unset;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
             width: 70vw;
             background: none;
-            box-shadow: none;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
         }
 
         li {
@@ -40,11 +48,17 @@
 
     // contact 
     .contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         .info {
             text-align: right;
-            flex: 0 0 30%;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 0 30%;
+                    flex: 0 0 30%;
         }
     }
 
@@ -72,7 +86,8 @@
         }
         .user-profile {
             .user-picks {
-                justify-content: space-around;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
                 i {
                     font-size: 7em;
                 }

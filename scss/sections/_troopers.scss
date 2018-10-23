@@ -21,8 +21,11 @@
     text-align: center;
     padding: 2rem;
     border-radius: 1rem;
-    flex: 1 0 30%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
     margin: 3px;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
     cursor: pointer;
@@ -37,11 +40,14 @@
 
     &:hover {
         //transform: scale(1.025);
-        box-shadow: 0 5px 10px rgba(17, 17, 17, 0.212);
+        -webkit-box-shadow: 0 5px 10px rgba(17, 17, 17, 0.212);
+                box-shadow: 0 5px 10px rgba(17, 17, 17, 0.212);
     }
 
     &.planet-card {
-        flex: 1 0 30%;  
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 30%;
+                flex: 1 0 30%;  
     }
 
     h2 {
@@ -55,7 +61,8 @@
         width: 150px;
         height: auto;
         &.trooper-img {
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         }
         
     }
@@ -75,8 +82,12 @@
     }
 
     li {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         padding: 1rem 0;
         border-bottom: 1px solid $secondary;
@@ -103,6 +114,8 @@
         text-decoration: none;
         border: .1em solid $third * .25;
         border-radius: 1em;
+
+        -webkit-transition: all .5s ease-in-out;
 
         transition: all .5s ease-in-out;
 
